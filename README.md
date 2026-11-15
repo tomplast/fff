@@ -7,10 +7,13 @@ frame rates.
 
 ## Run it
 
-Camera access requires a secure context. Publish the three files in `web/` to
-any HTTPS static host, then open that URL in the TV browser. A plain local HTTP
-server is useful for checking layout on a computer but normally cannot request a
-camera from another device.
+Camera access requires a secure context. This repository deploys `web/` to
+GitHub Pages whenever `main` changes, giving the POC a trusted HTTPS URL. In
+repository **Settings → Pages**, select **GitHub Actions** as the source once.
+The published address will normally be `https://tomplast.github.io/fff/`.
+
+A plain local HTTP server is useful for checking layout on a computer but
+normally cannot request a camera from another device.
 
 On the TV, connect the webcam first, open the page, select **Start camera**, and
 approve the browser's camera permission. The status panel reports what happened.
