@@ -11,10 +11,12 @@
     <main>
       <section class="stage" aria-label="Camera preview">
         <video id="preview" autoplay muted playsinline></video>
+        <canvas id="hands" aria-hidden="true"></canvas>
         <div class="hud" aria-live="polite">
           <span id="video-fps">Video: -- fps</span>
           <span id="render-fps">Render: -- fps</span>
           <span id="resolution">--</span>
+          <span id="hand-state">Hands: off</span>
         </div>
         <div id="empty-state">Connect a webcam, then start the camera.</div>
       </section>

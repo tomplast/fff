@@ -35,3 +35,10 @@ permission spike, not the game.
    observed preview FPS.
 3. If no camera appears, retain the status text as the compatibility
    result before investigating tracking.
+
+## Result and next phase
+
+The initial Android TV browser test reached a 640×480 camera stream at about
+17 video FPS and 69 render FPS. That passes the threshold for broad hand-driven
+play. The next narrow phase overlays MediaPipe Hand Landmarker index-fingertip
+cursors; body pose and gameplay remain out of scope.
