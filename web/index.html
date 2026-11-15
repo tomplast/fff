@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101728" />
+    <title>Camera Party — TV camera test</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="stage" aria-label="Camera preview">
+        <video id="preview" autoplay muted playsinline></video>
+        <div class="hud" aria-live="polite">
+          <span id="video-fps">Video: -- fps</span>
+          <span id="render-fps">Render: -- fps</span>
+          <span id="resolution">--</span>
+        </div>
+        <div id="empty-state">Connect a webcam, then start the camera.</div>
+      </section>
+      <section class="panel">
+        <div>
+          <p class="eyebrow">CAMERA PARTY / HARDWARE CHECK</p>
+          <h1>Is this TV ready to play?</h1>
+          <p id="status" class="status">Checking browser support…</p>
+        </div>
+        <div class="actions">
+          <button id="start" type="button">Start camera</button>
+          <button id="stop" type="button" disabled>Stop</button>
+        </div>
+        <details>
+          <summary>Detected video inputs</summary>
+          <ul id="devices"><li>Not checked yet.</li></ul>
+        </details>
+      </section>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+
